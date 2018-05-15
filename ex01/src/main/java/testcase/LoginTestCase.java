@@ -34,12 +34,12 @@ public class LoginTestCase {
 			
 		WebElement usernameTextField = this.driver.findElement(By.id("modlgn-username"));
 		WebElement passwordTextField = this.driver.findElement(By.id("modlgn-passwd"));
-		WebElement loginButton = this.driver.findElement(By.id("Submit"));
+		//WebElement loginButton = this.driver.findElement(By.id("Submit"));
 		
 		
 		usernameTextField.sendKeys("demo"); //inserir palavra demo
 		passwordTextField.sendKeys("demo"); //inserir palavra demo
-		loginButton.click();
+		//loginButton.click();
 		//loginButton.submit();//mesma ação que click()
 		
 		verificationpoint.checkHelloMessage();
