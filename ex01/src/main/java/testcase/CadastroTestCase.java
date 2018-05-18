@@ -32,7 +32,8 @@ public class CadastroTestCase {
 	}
 		
 	//@After
-	//public void tearDown() {
+	//public void tearDown() throws Exception {
+	//	this.driver.quit();
 	//}
 	
 	

@@ -1,5 +1,6 @@
 package Task;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import appobjects.CadastroAppObject;
@@ -13,11 +14,13 @@ public class CadastroTask {
 	}
 	
 	public void PreencherCadastro(String nome, String email, String senha, String confirmaSenha, String telefone, String cidade) {
-		cadastroAppObject.getNomeCompletoTextField().sendKeys(nome);
-		cadastroAppObject.getEmailTextField().sendKeys(email);
-		cadastroAppObject.getSenhaTextField().sendKeys(senha);
-		cadastroAppObject.getConfirmaSenhaTextField().sendKeys(confirmaSenha);
-		cadastroAppObject.getTelefoneTextField().sendKeys(telefone);	
+		this.cadastroAppObject.getNomeCompletoTextField().sendKeys(nome);
+		this.cadastroAppObject.getEmailTextField().sendKeys(email);
+		this.cadastroAppObject.getSenhaTextField().sendKeys(senha);
+		this.cadastroAppObject.getConfirmaSenhaTextField().sendKeys(confirmaSenha);
+		this.cadastroAppObject.getTelefoneTextField().sendKeys(telefone);	
+		this.cadastroAppObject.getCidadeComboBox().sendKeys(Keys.ARROW_DOWN);
+		this.cadastroAppObject.getCidadeComboBox().sendKeys(Keys.ENTER);
 	}
 	
 	public void EnviarFormulario() {
