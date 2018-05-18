@@ -12,8 +12,40 @@ public class CadastroAppObject {
 		this.driver = driver;
 	}
 	
-	public WebElement getNomeCompleto() {
+	public WebElement getNomeCompletoTextField() {
 		return this.driver.findElement(By.id("nome"));	
 	}
+	
+	public WebElement getEmailTextField() {
+		return this.driver.findElement(By.id("email"));
+		
+	}
+	
+	public WebElement getSenhaTextField() {
+		return this.driver.findElement(By.id("password"));
+		
+	}
+	
+	public WebElement getConfirmeSenhaTextField() {
+		return this.driver.findElement(By.id("passconf"));
+		
+	}
+	
+	public WebElement getTelefoneTextField() {
+		return this.driver.findElement(By.id("telefone"));
+		
+	}
+	
+	public WebElement getCidadeComboBox() {
+		return this.driver.findElement(By.id("cidade"));
+		
+	}
+	
+	public WebElement getCadastrarButton() {
+		//return this.driver.findElement(By.className("btn btn-success"));
+		//return this.driver.findElement(By.cssSelector("#cadastrar > fieldset > div:nth-child(8) > div")); 
+		return this.driver.findElement(By.xpath("//*[@id=\"cadastrar\"]/fieldset/div[8]/div"));
+	}
+	
 	
 }
