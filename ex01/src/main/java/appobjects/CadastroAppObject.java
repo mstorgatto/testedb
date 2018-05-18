@@ -26,7 +26,7 @@ public class CadastroAppObject {
 		
 	}
 	
-	public WebElement getConfirmeSenhaTextField() {
+	public WebElement getConfirmaSenhaTextField() {
 		return this.driver.findElement(By.id("passconf"));
 		
 	}
@@ -47,5 +47,5 @@ public class CadastroAppObject {
 		return this.driver.findElement(By.xpath("//*[@id=\"cadastrar\"]/fieldset/div[8]/div"));
 	}
 	
-	
+		
 }
